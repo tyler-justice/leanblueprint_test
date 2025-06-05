@@ -6,25 +6,15 @@
 % the current file can be a simple sequence of \input. Otherwise It
 % can start with a \section or \chapter for instance.
 
-\begin{theorem}[Smale 1958]
-  \label{thm:sphere_eversion}
-%  \lean{sphere_eversion}
-  \leanok
-  \uses{def:immersion}
-  There is a homotopy of immersions of $𝕊^2$ into $ℝ^3$ from the inclusion map to
-  the antipodal map $a : q ↦ -q$.
-\end{theorem}
-
-\begin{proof}
-  \leanok
-  \uses{thm:open_ample, lem:open_ample_immersion}
-  This obviously follows from what we did so far.
-\end{proof}
+\begin{definition}
+  \lean{polar}
+  Let $f$ be a function $f : M \to N$. The polar of $f$ is $f(x + y) - f(x) - f(g)$.
+\end{definition}
 
 \begin{theorem}
-  \lean{Matrix.det_apply}
-  Let $A$ be an $n \times n$ matrix. A determinant of $A$ can be written as follows:
+  \lean{map_add}
+  We have the following equality.
 $$
-  \det A = \sum_{\sigma \in \mathfrak{S}} \epsilon (\sigma) a_{1,\sigma(i)} \cdots a_{n,\sigma (n)}
+  f(x + y) = f(x) + f(y) + \mathrm{Polar} f(x,y)
 $$
 \end{theorem}

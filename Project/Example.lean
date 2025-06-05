@@ -1,3 +1,1 @@
-import Mathlib
-
-#check Matrix.det_apply
+import Mathlib.LinearAlgebra.QuadraticForm.Basic
