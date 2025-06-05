@@ -8,17 +8,35 @@
 
 \begin{definition}
   \lean{QuadraticMap.polar}
-  Let $f$ be a function $f : M \to N$. The polar of $f$ is $f(x + y) - f(x) - f(g)$.
+  \(M,N\) を AddCommGroup とし, \(f\) を \(M\) から \(N\) への写像とする
+  \(f\) の polar とは
+  \[
+  f(x+y) - f(x) - f(y)
+  \]
+  のことを言う.
 \end{definition}
 
 \begin{theorem}
-  \lean{map_add}
-  We have the following equality.
+  \lean{QuadraticMap.map_add}
+  以下の等式が成り立つ.
 $$
   f(x + y) = f(x) + f(y) + \mathrm{Polar} f(x,y)
 $$
 \end{theorem}
 
 \begin{proof}
-  定義から明らか
+  定義から明らか.
+\end{proof}
+
+\begin{theorem}
+  \lean{QuadraticMap.polar_add}
+  \(f,g\) を \(M\) から \(N\) への写像とする.
+  \[
+  \mathrm{Polar}(f + g) x y = \mathrm{Polar} f x y + \mathrm{Polar} g x y
+  \]
+  が成り立つ.
+\end{theorem}
+
+\begin{proof}
+  定義より明らか.
 \end{proof}
