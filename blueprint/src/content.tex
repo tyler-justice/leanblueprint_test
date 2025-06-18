@@ -9,7 +9,8 @@
 \section{Introduction}
 
 \begin{definition}
-  \lean{Mathlib.LinearAlgebra.QuadraticForm.Basic.QuadraticMap.polar}
+  \lean{QuadraticMap.polar}
+  \mathlibok
   \(M,N\) を AddCommGroup とし, \(f\) を \(M\) から \(N\) への写像とする
   \(f\) の polar とは
   \[
@@ -20,6 +21,7 @@
 
 \begin{theorem}
   \lean{QuadraticMap.map_add}
+  \mathlibok
   以下の等式が成り立つ.
 $$
   f(x + y) = f(x) + f(y) + \mathrm{Polar} f(x,y)
@@ -32,6 +34,7 @@ $$
 
 \begin{theorem}
   \lean{QuadraticMap.polar_add}
+  \mathlibok
   \(f,g\) を \(M\) から \(N\) への写像とする.
   \[
   \mathrm{Polar}(f + g) x y = \mathrm{Polar} f x y + \mathrm{Polar} g x y
